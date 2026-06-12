@@ -157,6 +157,8 @@
 @theme {
     --font-poppins: "Poppins", sans-serif;
 
+    --color-main-use: #16314e;
+
     --color-main-color1: #eaeaea;
     --color-main-color2: #f4f4f4;
     --color-main-color3: #fffffd;
@@ -167,3 +169,11 @@
 
     --color-accent: #ff9153;
 }
+
+.active {
+    @apply text-main-use relative font-bold after:content-[""] after:absolute after:w-20 after:h-1 after:bg-secondary-color2 after:rounded-full after:top-8 after:left-1/2 after:-translate-x-1/2;
+}
+
+/* a:hover {
+    @apply text-main-use relative  after:content-[""] after:absolute after:w-20 after:h-1 after:bg-secondary-color2 after:rounded-full after:top-8 after:left-1/2 after:-translate-x-1/2 transition-all duration-300 ease-in-out;
+} */
