@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="/src/style.css" />
         <title>LUMA Clinic</title>
     </head>
-    <body>
+    <body style="background-color: #FFFEFD;">
         <navbar
             class="bg-main-color3 flex h-25 items-center justify-between px-25"
         >
@@ -37,6 +37,109 @@
                 </a>
             </ul>
         </navbar>
-        about us
+
+        <main class="container mx-auto px-8 py-12 justify-between px-15">
+            <section class="grid gap-8" style="grid-template-columns: 1fr 520px; align-items: start;">
+                <div style="max-width:520px; padding-right:24px;">
+                    <h1 class="text-5xl font-serif text-main-color" style="color: #16314E;">Our Story</h1>
+                    <h3 class="mt-4 text-lg font-semibold" style="color:#5E7492; font-weight:700;">Our Goal Is Not To Change Who You Are,<br/>But To Help You Feel Like Yourself Again.</h3>
+                    <p class="mt-4 text-neutral-600">Every face tells a story. Every patient carries hopes, insecurities,<br/>and dreams of feeling better — inside and out.<br/>At our clinic, we believe true transformation happens when<br/>medicine meets understanding. Through personalised aesthetic<br/>medicine, hair restoration, and regenerative wellness therapies,<br/>we aim to restore confidence, renew vitality, and support<br/>healthier, longer lives — helping our patients feel like the best<br/>version of themselves again.</p>
+                </div>
+                <div style="display:flex; justify-content:flex-end; align-items:flex-start;">
+                    <img src="/src/assets/images/hair1.png" alt="Hair image" class="rounded-xl shadow-lg" style="width:520px; height:320px; object-fit:cover; border-radius:12px;" />
+                </div>
+            </section>
+
+            <section class="mt-12 grid grid-cols-2 gap-8 items-start">
+                <div class="flex flex-col items-center">
+                    <img src="/src/assets/images/ai doctor.png" alt="Doctor" class="w-[480px] -ml-18" 
+                         style="border-radius:18px; box-shadow:
+                         0 4px 4px 0px rgba(0, 0, 0, 0.25),
+                         256px 242px 99px 0px rgba(77, 77, 90, 0.01),
+                         164px 155px 90px 0px rgba(77, 77, 90, 0.01),
+                         92px 87px 76px 0px rgba(77, 77, 90, 0.05),
+                         41px 39px 56px 0px rgba(77, 77, 90, 0.09),
+                         10px 10px 31px 0px rgba(77, 77, 90, 0.1);" />
+                </div>
+                <div class="flex flex-col justify-between h-full space-y-6 flex-1">
+                    <div class="flex-1 bg-white p-6 rounded-lg flex flex-col justify-center" style="box-shadow:
+                         0 47px 13px 0px rgba(77, 77, 90, 0.01),
+                         0px 30px 12px 0px rgba(77, 77, 90, 0.01),
+                         0px 17px 10px 0px rgba(77, 77, 90, 0.05),
+                         0px 8px 8px 0px rgba(77, 77, 90, 0.09),
+                         0px 2px 4px 0px rgba(77, 77, 90, 0.1);">
+                        <h4 class="text-2xl font-bold text-main-color3" style="color: #16314E;">Vision</h4>
+                        <p class="mt-2 text-neutral-600">To be part of every patient’s journey — not just in enhancing how they look, but in changing how they feel about themselves and their future.</p>
+                    </div>
+                    <div class="flex-1 bg-main-color3 p-6 rounded-lg text-white shadow" style="background-color: #16314E;">
+                        <h4 class="text-2xl font-bold" style="color: white;">Mission</h4>
+                        <p class="mt-2">We walk alongside our patients, offering thoughtful, personalized aesthetic and regenerative care that supports natural beauty, inner confidence, and long-term wellbeing — with compassion, integrity, and purpose.</p>
+                    </div>
+                </div>
+                <div class="mt-6 w-full flex justify-center">
+                        <a href="/" class="bg-main-use text-main-color3 rounded-md px-10 py-3 -ml-18 font-semibold text-lg">Book Consultation</a>
+                    </div>
+            </section>
+
+            <section class="max-w-6xl mx-auto px-4 py-16 flex flex-col items-center">
+                <h1 class="text-4xl font-bold mb-12 text-[#16314E]">Values</h1>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
+                    
+                    <div class="bg-[#FBF8F6] rounded-2xl flex flex-col items-center pb-8 overflow-hidden" 
+                        style="box-shadow: 0px 10px 31px 0px rgba(77, 77, 90, 0.1);">
+                        <div class="bg-[#16314E] w-full py-3 text-center mb-8">
+                            <h3 class="text-white font-bold text-lg">Integrity</h3>
+                        </div>
+                        <div class="text-[#16314E] mb-6">
+                            <img src="/src/assets/icons/Integrity.svg" class="w-16 h-16" fill="currentColor" viewBox="0 0 24 24"></img>
+                        </div>
+                        <p class="text-neutral-600 text-center px-6 text-sm leading-relaxed">
+                            We recommend only treatments that are appropriate for your needs.
+                        </p>
+                    </div>
+
+                    <div class="bg-[#FBF8F6] rounded-2xl flex flex-col items-center pb-8 overflow-hidden" 
+                        style="box-shadow: 0px 10px 31px 0px rgba(77, 77, 90, 0.1);">
+                        <div class="bg-[#16314E] w-full py-3 text-center mb-8">
+                            <h3 class="text-white font-bold text-lg">Personalization</h3>
+                        </div>
+                        <div class="text-[#16314E] mb-6">
+                            <img src="/src/assets/icons/Personalization.svg" class="w-16 h-16" fill="currentColor" viewBox="0 0 24 24"></img>
+                        </div>
+                        <p class="text-neutral-600 text-center px-6 text-sm leading-relaxed">
+                            Every patient receives an individualized plan.
+                        </p>
+                    </div>
+
+                    <div class="bg-[#FBF8F6] rounded-2xl flex flex-col items-center pb-8 overflow-hidden" 
+                        style="box-shadow: 0px 10px 31px 0px rgba(77, 77, 90, 0.1);">
+                        <div class="bg-[#16314E] w-full py-3 text-center mb-8">
+                            <h3 class="text-white font-bold text-lg">Excellence</h3>
+                        </div>
+                        <div class="text-[#16314E] mb-6">
+                            <img src="/src/assets/icons/Excellence.svg" class="w-16 h-16" fill="currentColor" viewBox="0 0 24 24"></img>
+                        </div>
+                        <p class="text-neutral-600 text-center px-6 text-sm leading-relaxed">
+                            We strive to deliver safe, ethical, and high-quality care.
+                        </p>
+                    </div>
+
+                    <div class="bg-[#FBF8F6] rounded-2xl flex flex-col items-center pb-8 overflow-hidden" 
+                        style="box-shadow: 0px 10px 31px 0px rgba(77, 77, 90, 0.1);">
+                        <div class="bg-[#16314E] w-full py-3 text-center mb-8">
+                            <h3 class="text-white font-bold text-lg">Compassion</h3>
+                        </div>
+                        <div class="text-[#16314E] mb-6">
+                            <img src="/src/assets/icons/Compassion.svg" class="w-16 h-16" fill="currentColor" viewBox="0 0 24 24"></img>
+                        </div>
+                        <p class="text-neutral-600 text-center px-6 text-sm leading-relaxed">
+                            We listen, understand, and support every patient’s journey.
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+        </main>
     </body>
 </html>
