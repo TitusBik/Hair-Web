@@ -164,21 +164,13 @@
         format("truetype");
 }
 
-@font-face {
-    font-family: "Times New Roman";
-    font-style: normal;
-    font-display: swap;
-    src: url("/src/assets/fonts/Times-New-Roman/times.ttf") format("truetype");
-}
-
 @theme {
     --font-poppins: "Poppins", sans-serif;
-    --font-times-new-roman: "Times New Roman", serif;
 
     --color-main-use: #16314e;
 
     --color-main-color1: #eaeaea;
-    --color-main-color2: #f4f4f4;
+    --color-main-color2: #c3c3c3;
     --color-main-color3: #fffffd;
 
     --color-secondary-color1: #1f1f1f;
