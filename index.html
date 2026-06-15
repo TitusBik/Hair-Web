@@ -6,36 +6,42 @@
         <link rel="stylesheet" href="/src/style.css" />
         <title>LUMA Clinic</title>
     </head>
-    <body>
-        <navbar
-            class="bg-main-color3 mx-auto flex h-25 items-center justify-between"
-            style="max-width: 1240px"
-        >
-            <div class="logo">
-                <img
-                    src="/src/assets/images/logov2.png"
-                    alt="LUMA Clinic Logo"
-                />
-            </div>
-            <ul class="font-regular flex items-center gap-4 text-xl">
-                <li><a href="index.html" class="active px-4">Home</a></li>
-                <li>
-                    <a href="about/index.html" class="px-4">About Us</a>
-                </li>
-                <li>
-                    <a href="services/index.html" class="px-4">Our Services</a>
-                </li>
-                <li>
-                    <a href="contact/index.html" class="px-4">Contact Us</a>
-                </li>
-                <a
-                    href="/"
-                    class="bg-main-use text-main-color3 cursor-pointer rounded-[10px] px-9 py-2.5"
+    <body class="flex min-h-screen flex-col">
+        <nav class="bg-main-color3 h-25">
+            <div
+                class="mx-auto flex items-center justify-between"
+                style="max-width: 1240px"
+            >
+                <div class="logo">
+                    <img
+                        src="/src/assets/images/logov2.png"
+                        alt="LUMA Clinic Logo"
+                    />
+                </div>
+                <ul
+                    class="text-secondary-color1 flex items-center gap-4 text-xl"
                 >
-                    Book Consultation
-                </a>
-            </ul>
-        </navbar>
+                    <li><a href="index.html" class="active px-4">Home</a></li>
+                    <li>
+                        <a href="about/index.html" class="px-4">About Us</a>
+                    </li>
+                    <li>
+                        <a href="services/index.html" class="px-4"
+                            >Our Services</a
+                        >
+                    </li>
+                    <li>
+                        <a href="contact/index.html" class="px-4">Contact Us</a>
+                    </li>
+                    <a
+                        href="/"
+                        class="bg-main-use text-main-color3 rounded-[10px] px-9 py-2.5"
+                    >
+                        Book Consultation
+                    </a>
+                </ul>
+            </div>
+        </nav>
 
         <div class="relative h-180">
             <div
@@ -59,7 +65,7 @@
                     Medicine <span class="px-2">·</span> Regenerative Wellness
                 </p>
                 <p
-                    class="text-main-color3 font-regular mt-5 text-[16px] text-shadow-[0_5px_3px_rgba(0,0,0,0.2)]"
+                    class="text-main-color3 mt-5 text-[16px] text-shadow-[0_5px_3px_rgba(0,0,0,0.2)]"
                 >
                     Helping you look better, feel stronger, and age with <br />
                     confidence through personalized, science-guided care.
@@ -304,5 +310,55 @@
                 <span class="bg-main-color2 h-2.5 w-2.5 rounded-full"></span>
             </div>
         </div>
+
+        <footer class="bg-main-use mt-auto h-42.5">
+            <div
+                class="mx-auto flex items-center justify-between"
+                style="max-width: 1240px"
+            >
+                <img src="/src/assets/images/logo footer.png" />
+                <div class="flex flex-col gap-4">
+                    <div class="flex justify-between">
+                        <img
+                            src="/src/assets/icons/Facebook.svg"
+                            class="inline-block h-12.5 w-12.5 cursor-pointer"
+                        />
+                        <img
+                            src="/src/assets/icons/Instagram Circle.svg"
+                            class="inline-block h-12.5 w-12.5 cursor-pointer"
+                        />
+                        <img
+                            src="/src/assets/icons/Whatsapp.svg"
+                            class="inline-block h-12.5 w-12.5 cursor-pointer"
+                        />
+                    </div>
+                    <span class="text-[16px ] text-main-color1 font-light"
+                        >© 2026 LUMA Clinic. All rights reserved.</span
+                    >
+                </div>
+                <div class="flex flex-col items-center gap-5">
+                    <ul
+                        class="text-main-color1 flex items-center gap-8 text-xl"
+                    >
+                        <li><a href="index.html">Home</a></li>
+                        <li>
+                            <a href="about/index.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="services/index.html">Our Services</a>
+                        </li>
+                        <li>
+                            <a href="contact/index.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <a
+                        href="/"
+                        class="bg-secondary-color2 text-main-color1 w-fit rounded-[10px] px-9 py-2.5 text-xl"
+                    >
+                        Book Consultation
+                    </a>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
