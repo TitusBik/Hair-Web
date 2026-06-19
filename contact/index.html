@@ -38,147 +38,129 @@
             </ul>
         </nav>
         <div>
-            <h1 class="text-[65px] font-serif text-center py-5 text-main-color1 bg-main-use">Contact Us</h1>
+            <h1 class="text-[65px] font-serif text-center py-1 text-main-color1 bg-main-use">Contact Us</h1>
         </div>
         <div class="mx-auto sm:px-6 lg:px-0 lg:py-18" style="max-width: 1240px">
-            <section class="grid items-start gap-12 lg:grid-cols-2 lg:[grid-template-columns:55%_45%]">
-                <div class="flex flex-col gap-2">
-                    <div class="max-w-[760px]">
-                        <h2
-                            class="text-[55px] leading-none text-main-use"
-                            style="font-family: 'Times New Roman', Times, serif"
-                        >
-                            Let's Begin Your Journey
-                        </h2>
-                    </div>
+            <section class=" items-start gap-12 flex justify-between ">
+                <div class="flex flex-col gap-5">
+                    <h2
+                        class="text-[60px] leading-none text-main-use font-serif"
+                    >
+                        Let's Begin Your Journey
+                    </h2>
 
                     <img
                         src="/src/assets/images/doctor hand.png"
                         alt="LUMA Clinic portrait"
-                        class="h-[750px] w-full rounded-2xl object-cover object-center shadow-[5px_5px_15px_rgba(0,0,0,0.2)]"
+                        class="h-200 w-151.75  rounded-[20px] object-cover object-center shadow-[5px_5px_15px_rgba(0,0,0,0.2)]"
                     />
 
-                    <div class="space-y-1 pt-12">
-                        <p class="text-[24px] font-bold">LUMA Clinic</p>
-                        <p class="text-[16px] text-[#6B7280]">
+                    <div class="space-y-1 pt-8">
+                        <p class="text-[25px] text-secondary-color1 font-bold">LUMA Clinic</p>
+                        <p class=" text-secondary-color1">
                             Aesthetic, Hair Restoration & Regenerative Wellness
                         </p>
                     </div>
                 </div>
 
-                <div class="flex flex-col gap-8 pl-15">
-                    <div class="rounded-3xl bg-white p-10 shadow-[-8px_-5px_15px_rgba(0,0,0,0.09)]">
-                        <h3 class="text-[36px] font-semibold text-secondary-color1">Book Your Consultation</h3>
-                        <p class="text-[16px] leading-7 text-[#6B7280]">
+                <div class="flex flex-col gap-8 max-w-126.25">
+                    <div class="rounded-[20px] bg-[#F9F6F2] p-10 shadow-[-10px_-10px_30px_rgba(0,0,0,0.15)]">
+                        <h3 class="text-[35px] font-semibold text-secondary-color1">Book Your Consultation</h3>
+                        <p class=" leading-7 font-light text-secondary-color1">
                             Schedule a consultation with our medical team to find the right treatment for
                             your needs.
                         </p>
 
-                        <form class="pt-6 space-y-7">
-                            <div class="space-y-2">
+                        <form class="pt-10 space-y-3">
                                 <input
                                     id="full-name"
                                     type="text"
-                                    class="w-full border-0 border-b border-[#E5E7EB] bg-transparent text-[16px] text-secondary-color1 outline-none transition placeholder:text-secondary-color2 focus:border-[#163A5F] focus:ring-0"
+                                    class="w-full border-0 border-b border-secondary-color2 bg-transparent  text-secondary-color1 outline-none transition font-light pb-3 placeholder:text-secondary-color2 "
                                     placeholder="Full Name *"
                                 />
-                            </div>
 
-                            <div class="space-y-2">
                                 <input
                                     id="email"
                                     type="email"
-                                    class="w-full border-0 border-b border-[#E5E7EB] bg-transparent text-[16px] text-secondary-color1 outline-none transition placeholder:text-secondary-color2 focus:border-[#163A5F] focus:ring-0"
+                                    class="w-full border-0 border-b border-secondary-color2 bg-transparent  text-secondary-color1 outline-none transition font-light pb-3 placeholder:text-secondary-color2 "
                                     placeholder="Email Address *"
                                 />
-                            </div>
 
-                            <div class="space-y-2">
                                 <input
                                     id="treatment"
                                     type="text"
-                                    class="w-full border-0 border-b border-[#E5E7EB] bg-transparent text-[16px] text-secondary-color1 outline-none transition placeholder:text-secondary-color2 focus:border-[#163A5F] focus:ring-0"
+                                    class="w-full border-0 border-b border-secondary-color2 bg-transparent  text-secondary-color1 outline-none transition font-light pb-3 placeholder:text-secondary-color2 "
                                     placeholder="Treatment Of Interest *"
                                 />
-                            </div>
 
-                            <div class="space-y-2">
                                 <input
                                     id="message"
                                     type="text"
-                                    class="w-full border-0 border-b border-[#E5E7EB] bg-transparent text-[16px] text-secondary-color1 outline-none transition placeholder:text-secondary-color2 focus:border-[#163A5F] focus:ring-0"
+                                    class="w-full border-0 border-b border-secondary-color2 bg-transparent  text-secondary-color1 outline-none transition font-light pb-3 placeholder:text-secondary-color2 "
                                     placeholder="Message"
                                 ></input>
-                            </div>
 
                             <button
                                 type="submit"
-                                class="group flex h-[60px] w-full items-center justify-center rounded-xl bg-main-use px-6 text-[23px] font-bold text-white transition-colors duration-200 hover:bg-[#102a44]"
+                                class="group flex h-19.5 w-full gap-4 items-center justify-center rounded-[25px] bg-main-use px-6 text-[25px] font-bold text-white  mt-10 cursor-pointer "
                             >
                                 <span>Send Message</span>
-                                <span class="h-10 w-10 bg-white text-[#163A5F] transition-transform duration-200 group-hover:translate-x-0.5">
-                                    <img src="/src/assets/icons/Back Arrow.svg" alt="Arrow Right" class="bg-main-use" />
-                                </span>
+                                    <img src="/src/assets/icons/Back Arrow.svg" alt="Arrow Right" />
                             </button>
                         </form>
                     </div>
 
                     <div class="rounded-2xl bg-main-use px-6 py-6 text-center shadow-lg shadow-slate-200/20">
-                        <h4 class="text-[32px] font-semibold text-white">Social network</h4>
+                        <h4 class="text-[35px] font-semibold text-white">Social network</h4>
                         <div class="mt-2 flex items-center justify-center gap-12">
                             <a href="/" class="text-white transition-opacity hover:opacity-80" aria-label="Facebook">
-                                <img src="/src/assets/icons/Facebook.svg" alt="Facebook" class="h-12 w-12" />
+                                <img src="/src/assets/icons/Facebook.svg" alt="Facebook" class="h-12.5 w-12.5" />
                             </a>
                             <a href="/" class="text-white transition-opacity hover:opacity-80" aria-label="Instagram">
-                                <img src="/src/assets/icons/Instagram Circle.svg" alt="Instagram" class="h-12 w-12" />
+                                <img src="/src/assets/icons/Instagram Circle.svg" alt="Instagram" class="h-12.5 w-12.5" />
                             </a>
                             <a href="/" class="text-white transition-opacity hover:opacity-80" aria-label="WhatsApp">
-                                <img src="/src/assets/icons/WhatsApp.svg" alt="WhatsApp" class="h-12 w-12" />
+                                <img src="/src/assets/icons/WhatsApp.svg" alt="WhatsApp" class="h-12.5 w-12.5" />
                             </a>
                         </div>
                     </div>
 
-                    <div class="space-y-5 pl-2">
-                        <div class="flex items-center gap-4 text-[16px] leading-7 text-[#374151]">
-                            <span class="mt-1 text-[#163A5F]">
-                                <img src="/src/assets/icons/Clock.svg" alt="Clock Icon" class="h-8 w-8" />
-                            </span>
-                            <span>Mon – Sat: 10am – 7pm<br />(Sun & Public Holidays: Closed)</span>
+                    <div class="space-y-5 ">
+                        <div class="flex items-center gap-4  leading-7 text-[#374151]">
+                                <img src="/src/assets/icons/Clock.svg" alt="Clock Icon" class="h-10 w-10" />
+                            <span class="text-main-use text-[20px]">Mon – Sat: 10am – 7pm<br />(Sun & Public Holidays: Closed)</span>
                         </div>
 
 
-                        <div class="flex items-center gap-4 text-[16px] leading-7 text-[#374151]">
-                            <span class="mt-1 text-[#163A5F]">
-                                <img src="/src/assets/icons/Phone.svg" alt="Phone Icon" class="h-8 w-8" />
-                            </span>
-                            <span>+60 12-345 6789</span>
+                        <div class="flex items-center gap-4  leading-7 text-[#374151]">
+                            
+                                <img src="/src/assets/icons/Phone.svg" alt="Phone Icon" class="h-10 w-10" />
+                            <span class="text-main-use text-[20px]">+60 12-345 67109</span>
                         </div>
 
-                        <div class="flex items-center gap-4 text-[16px] leading-7 text-[#374151]">
-                            <span class="mt-1 text-[#163A5F]">
-                                <img src="/src/assets/icons/Email.svg" alt="Email Icon" class="h-8 w-8" />
-                            </span>
-                            <span>hello@lumaclinic.com.my</span>
+                        <div class="flex items-center gap-4  leading-7 text-[#374151]">
+                            
+                                <img src="/src/assets/icons/Email.svg" alt="Email Icon" class="h-10 w-10" />
+                            <span class="text-main-use text-[20px]">hello@lumaclinic.com.my</span>
                         </div>
 
-                        <div class="flex items-center gap-4 text-[16px] leading-7 text-[#374151]">
-                            <span class="mt-1 text-[#163A5F]">
-                                <img src="/src/assets/icons/Location.svg" alt="Location Icon" class="h-8 w-8" />
-                            </span>
-                            <span>123, Jalan Damai,<br />50490 Kuala Lumpur, Malaysia</span>
+                        <div class="flex items-center gap-4  leading-7 text-[#374151]">
+                            
+                                <img src="/src/assets/icons/Location.svg" alt="Location Icon" class="h-10 w-10" />
+                            <span class="text-main-use text-[20px]">123, Jalan Damai,<br />50490 Kuala Lumpur, Malaysia</span>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <h2 class="pt-10 text-[30px] font-semibold">Find us easily</h2>
-            <div class="relative h-[400px] w-full overflow-hidden rounded-2xl">
+            <h2 class="pt-10 pb-5 text-[35px] font-semibold">Find us easily</h2>
+            <div class="relative h-88.25 w-full overflow-hidden rounded-[20px]">
                 <img src="/src/assets/images/map.png" alt="Map" class="h-full w-full object-cover object-center" />
-                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+                <div class="absolute inset-0 bg-linear-to-t from-[#1F1F1F] via-[#272727]/60 to-[#858585]/50"></div>
                 <div class="pointer-events-none absolute left-6 top-6">
                     <img src="/src/assets/icons/Back Arrow.svg" alt="Arrow" class="h-12 w-12" />
                 </div>
-                <h3 class="pointer-events-none absolute bottom-10 left-1/2 w-full -translate-x-1/2 text-center text-[26px] font-bold text-white shadow-lg">
+                <h3 class="pointer-events-none absolute bottom-8 left-1/2 w-full -translate-x-1/2 text-center text-[35px] font-semibold text-main-color3 ">
                     Shop is not open yet. Still under renovation
                 </h3>
             </div>
