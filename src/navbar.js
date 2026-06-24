@@ -1,5 +1,5 @@
 function loadNavbar() {
-    fetch("/src/components/navbar.html")
+    fetch("/Hair-Web/components/navbar.html")
         .then((response) => response.text())
         .then((data) => {
             if (!document.querySelector("nav")) {
