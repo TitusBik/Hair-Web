@@ -1,29 +1,51 @@
-<nav class="bg-main-color3 h-25 shadow-[0_0px_30px_rgba(0,0,0,0.07)]">
+<nav class="bg-main-color3 min-h-20 md:h-25 shadow-[0_0px_30px_rgba(0,0,0,0.07)]">
     <div
-        class="mx-auto flex items-center justify-between"
+        class="mx-auto flex items-center justify-between px-4 md:px-0 py-3 md:py-0"
         style="max-width: 1240px"
     >
-        <div class="logo">
-            <img src="/Hair-Web/assets/images/logov2.png" alt="LUMA Clinic Logo" />
+        <div class="logo max-w-32 md:max-w-none">
+            <img
+                src="/Hair-Web/assets/images/logov2.png"
+                alt="LUMA Clinic Logo"
+                class="w-full md:w-auto md:h-auto"
+            />
         </div>
-        <ul class="text-secondary-color1 flex items-center gap-4 text-xl">
-            <li><a href="/Hair-Web/" class="px-4" data-page="home">Home</a></li>
+
+        <!-- Hamburger Menu Button -->
+        <button
+            id="mobileMenuBtn"
+            class="md:hidden flex flex-col gap-1.5"
+            aria-label="Toggle menu"
+        >
+            <span class="w-6 h-0.5 bg-secondary-color1 block"></span>
+            <span class="w-6 h-0.5 bg-secondary-color1 block"></span>
+            <span class="w-6 h-0.5 bg-secondary-color1 block"></span>
+        </button>
+
+        <!-- Navigation Menu -->
+        <ul
+            id="navMenu"
+            class="text-secondary-color1 hidden md:flex items-center gap-4 text-xl absolute md:static top-20 left-0 right-0 flex-col md:flex-row bg-main-color3 md:bg-transparent p-4 md:p-0 z-10"
+        >
+            <li><a href="/Hair-Web/" class="px-4 py-2 md:py-0" data-page="home">Home</a></li>
             <li>
-                <a href="/Hair-Web/about/" class="px-4" data-page="about">About Us</a>
+                <a href="/Hair-Web/about/" class="px-4 py-2 md:py-0" data-page="about"
+                    >About Us</a
+                >
             </li>
             <li>
-                <a href="/Hair-Web/services/" class="px-4" data-page="services"
+                <a href="/Hair-Web/services/" class="px-4 py-2 md:py-0" data-page="services"
                     >Our Services</a
                 >
             </li>
             <li>
-                <a href="/Hair-Web/contact/" class="px-4" data-page="contact"
+                <a href="/Hair-Web/contact/" class="px-4 py-2 md:py-0" data-page="contact"
                     >Contact Us</a
                 >
             </li>
             <a
                 href="/Hair-Web/"
-                class="bg-main-use text-main-color3 rounded-[10px] px-9 py-2.5"
+                class="bg-main-use text-main-color3 rounded-[10px] px-9 py-2.5 inline-block"
             >
                 Book Consultation
             </a>
