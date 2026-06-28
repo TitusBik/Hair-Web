@@ -4,303 +4,157 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="/src/style.css" />
-        <title>LUMA Clinic</title>
+        <title>About Us — LUMA Clinic</title>
         <script type="module" src="../src/navbar.js"></script>
         <script type="module" src="../src/footer.js"></script>
     </head>
     <body style="background-color: #fffefd" class="flex min-h-screen flex-col">
-        <main
-            class="container mx-auto justify-between py-12"
-            style="max-width: 1240px"
-        >
-            <section class="flex justify-between">
-                <div class="flex flex-col gap-4">
-                    <h1 class="text-main-use font-serif text-[65px]">
-                        Our Story
-                    </h1>
-                    <h3 class="text-secondary-color2 text-lg font-bold">
-                        Our Goal Is Not To Change Who You Are,<br />But To Help
-                        You Feel Like Yourself Again.
+        <main class="mx-auto w-full px-6 lg:px-0 py-10 lg:py-12" style="max-width: 1240px">
+
+            <!-- Our Story -->
+            <section class="flex flex-col lg:flex-row justify-between gap-8">
+                <div class="flex flex-col gap-4 lg:max-w-[520px]">
+                    <h1 class="text-main-use font-serif text-[36px] lg:text-[65px]">Our Story</h1>
+                    <h3 class="text-secondary-color2 text-sm lg:text-lg font-bold leading-6">
+                        Our Goal Is Not To Change Who You Are,<br />But To Help You Feel Like Yourself Again.
                     </h3>
-                    <p class="text-secondary-color1 font-light">
-                        Every face tells a story. Every patient carries hopes,
-                        insecurities,<br />and dreams of feeling better — inside
-                        and out.<br />At our clinic, we believe true
-                        transformation happens when<br />medicine meets
-                        understanding. Through personalised aesthetic<br />medicine,
-                        hair restoration, and regenerative wellness
-                        therapies,<br />we aim to restore confidence, renew
-                        vitality, and support<br />healthier, longer lives —
-                        helping our patients feel like the best<br />version of
-                        themselves again.
+                    <p class="text-secondary-color1 font-light text-[13px] lg:text-base leading-7">
+                        Every face tells a story. Every patient carries hopes, insecurities, and dreams of feeling better — inside and out. At our clinic, we believe true transformation happens when medicine meets understanding. Through personalised aesthetic medicine, hair restoration, and regenerative wellness therapies, we aim to restore confidence, renew vitality, and support healthier, longer lives.
                     </p>
                 </div>
-                <img
-                    src="/src/assets/images/hair1.png"
-                    alt="Hair image"
-                    class="rounded-xl shadow-lg"
-                    style="
-                        width: 610px;
-                        height: 375px;
-                        object-fit: cover;
-                        border-radius: 12px;
-                    "
-                />
+                <!-- Image constrained so it never blows out -->
+                <div class="w-full lg:w-[500px] shrink-0">
+                    <img
+                        src="/src/assets/images/hair1.png"
+                        alt="Hair image"
+                        class="w-full h-[200px] sm:h-[260px] lg:h-[340px] object-cover rounded-xl shadow-lg"
+                    />
+                </div>
             </section>
 
-            <section class="mt-20 flex items-start gap-20">
-                <div class="flex flex-col items-center">
-                    <div
-                        class="rounded-[20px] shadow-[20px_10px_30px_rgba(0,0,0,0.15)]"
-                    >
-                        <img
-                            src="/src/assets/images/ai doctor.png"
-                            alt="Doctor"
-                            class="h-101.25 w-114 rounded-[20px] shadow-[0px_4px_3px_rgba(0,0,0,0.3)]"
-                        />
-                    </div>
-
-                    <div class="mt-10 flex w-full justify-center">
-                        <a
-                            href="/"
-                            class="bg-main-use text-main-color1 rounded-[10px] px-5 py-4 text-[25px] font-extrabold"
-                            >Book Consultation</a
-                        >
+            <!-- Doctor + Vision/Mission -->
+            <section class="mt-12 lg:mt-20 flex flex-col lg:flex-row items-start gap-8 lg:gap-16">
+                <div class="flex flex-col items-center w-full lg:w-auto lg:shrink-0">
+                    <img
+                        src="/src/assets/images/ai doctor.png"
+                        alt="Doctor"
+                        class="w-full lg:w-[380px] h-[260px] sm:h-[340px] lg:h-[440px] object-cover rounded-[20px] shadow-[10px_10px_30px_rgba(0,0,0,0.15)]"
+                    />
+                    <div class="mt-6 w-full flex justify-center">
+                        <a href="/Hair-Web/contact/" class="bg-main-use text-main-color1 rounded-[10px] px-5 py-3 lg:py-4 text-[16px] lg:text-[22px] font-extrabold">
+                            Book Consultation
+                        </a>
                     </div>
                 </div>
-                <div class="flex h-101.25 max-w-152.5 flex-col justify-between">
-                    <div
-                        class="flex flex-col justify-center rounded-[20px] bg-white px-7 py-6 shadow-[0px_5px_10px_rgba(0,0,0,0.2)]"
-                    >
-                        <h4 class="text-main-use text-[35px] font-semibold">
-                            Vision
-                        </h4>
-                        <p class="text-main-use mt-2">
-                            To be part of every patient’s journey — not just in
-                            enhancing how they look, but in changing how they
-                            feel about themselves and their future.
+                <div class="flex flex-col gap-5 w-full">
+                    <div class="flex flex-col justify-center rounded-[20px] bg-white px-6 lg:px-7 py-6 shadow-[0px_5px_10px_rgba(0,0,0,0.2)]">
+                        <h4 class="text-main-use text-[24px] lg:text-[35px] font-semibold">Vision</h4>
+                        <p class="text-main-use mt-2 text-[13px] lg:text-base leading-7">
+                            To be part of every patient's journey — not just in enhancing how they look, but in changing how they feel about themselves and their future.
                         </p>
                     </div>
-                    <div
-                        class="bg-main-color3 rounded-[20px] px-7 py-6 text-white shadow"
-                        style="background-color: #16314e"
-                    >
-                        <h4 class="text-main-color1 text-[35px] font-semibold">
-                            Mission
-                        </h4>
-                        <p class="text-main-color1 mt-2">
-                            We walk alongside our patients, offering thoughtful,
-                            personalized aesthetic and regenerative care that
-                            supports natural beauty, inner confidence, and
-                            long-term wellbeing — with compassion, integrity,
-                            and purpose.
+                    <div class="rounded-[20px] px-6 lg:px-7 py-6 shadow" style="background-color: #16314e">
+                        <h4 class="text-main-color1 text-[24px] lg:text-[35px] font-semibold">Mission</h4>
+                        <p class="text-main-color1 mt-2 text-[13px] lg:text-base leading-7">
+                            We walk alongside our patients, offering thoughtful, personalized aesthetic and regenerative care that supports natural beauty, inner confidence, and long-term wellbeing — with compassion, integrity, and purpose.
                         </p>
                     </div>
                 </div>
             </section>
 
-            <section class="mt-3 text-center">
-                <h1 class="text-main-use mb-10 text-4xl font-bold">Values</h1>
-
-                <div class="flex justify-between">
-                    <div
-                        class="flex w-73.75 flex-col items-center overflow-hidden rounded-2xl bg-[#F9F6F2] pb-5 shadow-[-5px_0_15px_rgba(0,0,0,0.2)]"
-                    >
-                        <div class="bg-main-use mb-8 w-full py-3 text-center">
-                            <h3 class="text-main-color1 text-lg font-bold">
-                                Integrity
-                            </h3>
+            <!-- Values -->
+            <section class="mt-12 lg:mt-16 text-center">
+                <h1 class="text-main-use mb-8 text-[24px] lg:text-4xl font-bold">Values</h1>
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="flex flex-col items-center overflow-hidden rounded-2xl bg-[#F9F6F2] pb-5 shadow-[-5px_0_15px_rgba(0,0,0,0.2)]">
+                        <div class="bg-main-use mb-5 w-full py-3 text-center">
+                            <h3 class="text-main-color1 text-sm lg:text-base font-bold">Integrity</h3>
                         </div>
-                        <div class="text-main-use mb-6">
-                            <img
-                                src="/src/assets/icons/Integrity.svg"
-                                class="h-16 w-16"
-                                alt="Integrity icon"
-                            />
-                        </div>
-                        <p
-                            class="text-secondary-color1 px-6 text-center font-light"
-                        >
-                            We recommend only treatments that are appropriate
-                            for your needs.
-                        </p>
+                        <img src="/src/assets/icons/Integrity.svg" class="h-10 w-10 lg:h-14 lg:w-14 mb-4" alt="Integrity" />
+                        <p class="text-secondary-color1 px-3 text-center font-light text-[11px] lg:text-[13px]">We recommend only treatments appropriate for your needs.</p>
                     </div>
-
-                    <div
-                        class="flex w-73.75 flex-col items-center overflow-hidden rounded-2xl bg-[#F9F6F2] pb-5 shadow-[-5px_0_15px_rgba(0,0,0,0.2)]"
-                    >
-                        <div class="bg-main-use mb-8 w-full py-3 text-center">
-                            <h3 class="text-main-color1 text-lg font-bold">
-                                Personalization
-                            </h3>
+                    <div class="flex flex-col items-center overflow-hidden rounded-2xl bg-[#F9F6F2] pb-5 shadow-[-5px_0_15px_rgba(0,0,0,0.2)]">
+                        <div class="bg-main-use mb-5 w-full py-3 text-center">
+                            <h3 class="text-main-color1 text-sm lg:text-base font-bold">Personalization</h3>
                         </div>
-                        <div class="text-main-use mb-6">
-                            <img
-                                src="/src/assets/icons/Personalization.svg"
-                                class="h-16 w-16"
-                                alt="Personalization icon"
-                            />
-                        </div>
-                        <p
-                            class="text-secondary-color1 px-6 text-center font-light"
-                        >
-                            Every patient receives an individualized plan.
-                        </p>
+                        <img src="/src/assets/icons/Personalization.svg" class="h-10 w-10 lg:h-14 lg:w-14 mb-4" alt="Personalization" />
+                        <p class="text-secondary-color1 px-3 text-center font-light text-[11px] lg:text-[13px]">Every patient receives an individualized plan.</p>
                     </div>
-
-                    <div
-                        class="flex w-73.75 flex-col items-center overflow-hidden rounded-2xl bg-[#F9F6F2] pb-5 shadow-[-5px_0_15px_rgba(0,0,0,0.2)]"
-                    >
-                        <div class="bg-main-use mb-8 w-full py-3 text-center">
-                            <h3 class="text-main-color1 text-lg font-bold">
-                                Excellence
-                            </h3>
+                    <div class="flex flex-col items-center overflow-hidden rounded-2xl bg-[#F9F6F2] pb-5 shadow-[-5px_0_15px_rgba(0,0,0,0.2)]">
+                        <div class="bg-main-use mb-5 w-full py-3 text-center">
+                            <h3 class="text-main-color1 text-sm lg:text-base font-bold">Excellence</h3>
                         </div>
-                        <div class="text-main-use mb-6">
-                            <img
-                                src="/src/assets/icons/Excellence.svg"
-                                class="h-16 w-16"
-                                alt="Excellence icon"
-                            />
-                        </div>
-                        <p
-                            class="text-secondary-color1 px-6 text-center font-light"
-                        >
-                            We strive to deliver safe, ethical, and high-quality
-                            care.
-                        </p>
+                        <img src="/src/assets/icons/Excellence.svg" class="h-10 w-10 lg:h-14 lg:w-14 mb-4" alt="Excellence" />
+                        <p class="text-secondary-color1 px-3 text-center font-light text-[11px] lg:text-[13px]">We strive to deliver safe, ethical, and high-quality care.</p>
                     </div>
-
-                    <div
-                        class="flex w-73.75 flex-col items-center overflow-hidden rounded-2xl bg-[#F9F6F2] pb-5 shadow-[-5px_0_15px_rgba(0,0,0,0.2)]"
-                    >
-                        <div class="bg-main-use mb-8 w-full py-3 text-center">
-                            <h3 class="text-main-color1 text-lg font-bold">
-                                Compassion
-                            </h3>
+                    <div class="flex flex-col items-center overflow-hidden rounded-2xl bg-[#F9F6F2] pb-5 shadow-[-5px_0_15px_rgba(0,0,0,0.2)]">
+                        <div class="bg-main-use mb-5 w-full py-3 text-center">
+                            <h3 class="text-main-color1 text-sm lg:text-base font-bold">Compassion</h3>
                         </div>
-                        <div class="text-main-use mb-6">
-                            <img
-                                src="/src/assets/icons/Compassion.svg"
-                                class="h-16 w-16"
-                                alt="Compassion icon"
-                            />
-                        </div>
-                        <p
-                            class="text-secondary-color1 px-6 text-center font-light"
-                        >
-                            We listen, understand, and support every patient's
-                            journey.
-                        </p>
+                        <img src="/src/assets/icons/Compassion.svg" class="h-10 w-10 lg:h-14 lg:w-14 mb-4" alt="Compassion" />
+                        <p class="text-secondary-color1 px-3 text-center font-light text-[11px] lg:text-[13px]">We listen, understand, and support every patient's journey.</p>
                     </div>
                 </div>
             </section>
 
-            <section class="mt-25">
-                <h1 class="text-main-use font-serif text-[65px]">
-                    Founder’s Note
-                </h1>
-
-                <div class="flex justify-between">
-                    <div style="max-width: 735px">
-                        <p class="text-secondary-color1 font-light">
-                            This clinic was born from listening.
+            <!-- Founder's Note -->
+            <section class="mt-14 lg:mt-24">
+                <h1 class="text-main-use font-serif text-[32px] lg:text-[65px]">Founder's Note</h1>
+                <div class="flex flex-col lg:flex-row gap-8 mt-6">
+                    <div class="lg:max-w-[600px]">
+                        <p class="text-secondary-color1 font-light leading-7 text-[13px] lg:text-base">This clinic was born from listening.</p>
+                        <p class="text-secondary-color1 mt-5 font-light leading-7 text-[13px] lg:text-base">
+                            Listening to patients who felt they had lost a part of themselves — their confidence, their energy, their vitality, and sometimes even their hair. Many came to me seeking aesthetic change, but what they were truly searching for was reassurance, care, and hope.
                         </p>
-
-                        <p class="text-secondary-color1 mt-6 font-light">
-                            Listening to patients who felt they had lost a part
-                            of themselves — their confidence, their energy,
-                            their vitality, and sometimes even their hair. Many
-                            came to me seeking aesthetic change, but what they
-                            were truly searching for was reassurance, care, and
-                            hope that they could feel whole again.
-                        </p>
-
-                        <p class="text-secondary-color1 mt-6 font-light">
-                            Hair loss, facial ageing, and declining wellness are
-                            deeply personal experiences. They affect how we see
-                            ourselves, how we show up in the world, and how we
-                            live our daily lives. I have always believed these
-                            concerns deserve more than quick fixes — they
-                            deserve understanding, time, and thoughtful care.
+                        <p class="text-secondary-color1 mt-5 font-light leading-7 text-[13px] lg:text-base">
+                            Hair loss, facial ageing, and declining wellness are deeply personal experiences. They affect how we see ourselves, how we show up in the world, and how we live our daily lives. I have always believed these concerns deserve understanding, time, and thoughtful care.
                         </p>
                     </div>
-
-                    <div class="flex items-start justify-end">
+                    <div class="w-full lg:w-auto lg:shrink-0">
                         <img
                             src="/src/assets/images/founder note.png"
-                            alt="Founder Note Image"
-                            class="block h-auto max-w-full rounded-3xl shadow-[15px_10px_50px_rgba(0,0,0,0.3)]"
+                            alt="Founder Note"
+                            class="w-full lg:w-[420px] h-[220px] sm:h-[280px] lg:h-auto object-cover rounded-3xl shadow-[15px_10px_50px_rgba(0,0,0,0.3)]"
                         />
                     </div>
                 </div>
             </section>
 
-            <section class="mt-13">
-                <div class="flex gap-20">
-                    <div class="flex items-start justify-end">
+            <!-- Clinic section -->
+            <section class="mt-10 lg:mt-14">
+                <div class="flex flex-col lg:flex-row gap-8">
+                    <div class="w-full lg:w-auto lg:shrink-0">
                         <img
                             src="/src/assets/images/clinic.png"
-                            alt="Clinic Image"
-                            class="block h-auto max-w-full rounded-3xl shadow-[-15px_-5px_50px_rgba(0,0,0,0.3)]"
+                            alt="Clinic"
+                            class="w-full lg:w-[420px] h-[220px] sm:h-[280px] lg:h-auto object-cover rounded-3xl shadow-[-15px_-5px_50px_rgba(0,0,0,0.3)]"
                         />
                     </div>
-                    <div style="max-width: 630px">
-                        <p class="text-secondary-color1 font-light">
-                            This clinic was created to honour the whole person.
-                            From aesthetic enhancement and hair restoration to
-                            regenerative and wellness therapies, every treatment
-                            plan is personalised and guided by science, ethics,
-                            and long-term wellbeing. Our focus is not
-                            perfection, but restoration — restoring confidence,
-                            strength, and balance.
+                    <div class="lg:max-w-[580px]">
+                        <p class="text-secondary-color1 font-light leading-7 text-[13px] lg:text-base">
+                            This clinic was created to honour the whole person. From aesthetic enhancement and hair restoration to regenerative and wellness therapies, every treatment plan is personalised and guided by science, ethics, and long-term wellbeing.
                         </p>
-
-                        <p class="text-secondary-color1 mt-6 font-light">
-                            To me, true transformation is not only visible in
-                            the mirror, but felt in everyday life — when you
-                            feel more confident in your appearance, stronger in
-                            your body, and more optimistic about the years
-                            ahead.
+                        <p class="text-secondary-color1 mt-5 font-light leading-7 text-[13px] lg:text-base">
+                            To me, true transformation is not only visible in the mirror, but felt in everyday life — when you feel more confident in your appearance, stronger in your body, and more optimistic about the years ahead.
                         </p>
-
-                        <p class="text-secondary-color1 mt-6 font-light">
-                            We don’t just treat hair, skin, or health — we care
-                            for the person behind them.
-                        </p>
-
-                        <p class="text-secondary-color1 mt-6 font-light">
-                            Your journey matters to us. Together, we aim for
-                            results that feel as good as they look. We look
-                            forward to welcoming you.
-                        </p>
+                        <p class="text-secondary-color1 mt-5 font-light leading-7 text-[13px] lg:text-base">We don't just treat hair, skin, or health — we care for the person behind them.</p>
+                        <p class="text-secondary-color1 mt-5 font-light leading-7 text-[13px] lg:text-base">Your journey matters to us. We look forward to welcoming you.</p>
                     </div>
                 </div>
             </section>
 
-            <div class="mt-30 flex justify-center">
-                <a
-                    href="/Hair-Web/contact/index.html"
-                    class="bg-main-use text-main-color1 rounded-[10px] px-5 py-4 text-[25px] font-extrabold"
-                >
+            <!-- CTA -->
+            <div class="mt-12 lg:mt-24 flex justify-center">
+                <a href="/Hair-Web/contact/" class="bg-main-use text-main-color1 rounded-[10px] px-5 py-4 text-[18px] lg:text-[25px] font-extrabold">
                     Book Consultation
                 </a>
             </div>
 
-            <div class="mt-15 flex flex-col items-center justify-center">
-                <button
-                    onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
-                    class="group flex cursor-pointer flex-col items-center focus:outline-none"
-                >
-                    <div class="mb-2">
-                        <img
-                            src="/src/assets/icons/Arrow.svg"
-                            class="h-20 w-20 rotate-270"
-                        />
-                    </div>
-                    <span class="text-secondary-color1 font-light">
-                        Back To Top
-                    </span>
+            <!-- Back to top -->
+            <div class="mt-10 mb-8 flex flex-col items-center justify-center">
+                <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" class="flex cursor-pointer flex-col items-center focus:outline-none">
+                    <img src="/src/assets/icons/Arrow.svg" class="h-14 w-14 lg:h-20 lg:w-20 rotate-270 mb-2" />
+                    <span class="text-secondary-color1 font-light text-sm">Back To Top</span>
                 </button>
             </div>
         </main>
