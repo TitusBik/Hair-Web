@@ -25,7 +25,7 @@ function setActiveNavLink() {
 function getCurrentPageName() {
     const pathname = window.location.pathname;
 
-    if (pathname === "/" || pathname === "/index.html") {
+    if (pathname === "/Hair-Web/" || pathname === "/Hair-Web/index.html") {
         return "home";
     } else if (pathname.includes("about")) {
         return "about";

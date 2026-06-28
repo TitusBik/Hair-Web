@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-    base: "/Hair-Web/",
+    base: "/Hair-Web",
     plugins: [tailwindcss()],
     build: {
         rollupOptions: {
