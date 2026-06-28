@@ -1,1 +1,0 @@
-function e(){fetch("${BASE}/components/footer.html").then(e=>e.text()).then(e=>{document.querySelector(`footer`)||document.body.insertAdjacentHTML(`beforeend`,e)}).catch(e=>console.error(`Error loading footer:`,e))}document.addEventListener(`DOMContentLoaded`,e);
