@@ -1,22 +1,43 @@
-<nav class="bg-main-color3 shadow-[0_0px_30px_rgba(0,0,0,0.07)] relative z-50">
+<nav class="bg-main-color3 relative z-50 shadow-[0_0px_30px_rgba(0,0,0,0.07)]">
     <div
-        class="mx-auto flex items-center justify-between px-6 py-4 lg:py-0 lg:h-25"
+        class="mx-auto flex items-center justify-between px-6 py-4 lg:h-25 lg:py-0"
         style="max-width: 1240px"
     >
         <div class="logo">
             <a href="/Hair-Web/">
-                <img src="/Hair-Web/assets/images/logov2.png" alt="LUMA Clinic Logo" class="h-14 lg:h-auto" />
+                <img
+                    src="/Hair-Web/assets/images/logov2.png"
+                    alt="LUMA Clinic Logo"
+                    class="h-14 lg:h-auto"
+                />
             </a>
         </div>
 
         <!-- Desktop Nav -->
-        <ul class="text-secondary-color1 hidden lg:flex items-center gap-4 text-xl">
+        <ul
+            class="text-secondary-color1 hidden items-center gap-4 text-xl lg:flex"
+        >
             <li><a href="/Hair-Web/" class="px-4" data-page="home">Home</a></li>
-            <li><a href="/Hair-Web/about/" class="px-4" data-page="about">About Us</a></li>
-            <li><a href="/Hair-Web/services/" class="px-4" data-page="services">Our Services</a></li>
-            <li><a href="/Hair-Web/contact/" class="px-4" data-page="contact">Contact Us</a></li>
             <li>
-                <a href="/Hair-Web/contact/" class="bg-main-use text-main-color3 rounded-[10px] px-9 py-2.5">
+                <a href="/Hair-Web/about/" class="px-4" data-page="about"
+                    >About Us</a
+                >
+            </li>
+            <li>
+                <a href="/Hair-Web/services/" class="px-4" data-page="services"
+                    >Our Services</a
+                >
+            </li>
+            <li>
+                <a href="/Hair-Web/contact/" class="px-4" data-page="contact"
+                    >Contact Us</a
+                >
+            </li>
+            <li>
+                <a
+                    href="/Hair-Web/contact/"
+                    class="bg-main-use text-main-color3 rounded-[10px] px-9 py-2.5"
+                >
                     Book Consultation
                 </a>
             </li>
@@ -25,31 +46,71 @@
         <!-- Hamburger Button -->
         <button
             id="nav-toggle"
-            class="lg:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 cursor-pointer border-none bg-transparent"
+            class="flex h-10 w-10 cursor-pointer flex-col items-center justify-center gap-1.5 border-none bg-transparent lg:hidden"
             aria-label="Toggle menu"
         >
-            <span class="nav-bar block w-7 bg-main-use rounded-full" style="height:2px;transition:all 0.3s"></span>
-            <span class="nav-bar block w-7 bg-main-use rounded-full" style="height:2px;transition:all 0.3s"></span>
-            <span class="nav-bar block w-7 bg-main-use rounded-full" style="height:2px;transition:all 0.3s"></span>
+            <span
+                class="nav-bar bg-main-use block w-7 rounded-full"
+                style="height: 2px; transition: all 0.3s"
+            ></span>
+            <span
+                class="nav-bar bg-main-use block w-7 rounded-full"
+                style="height: 2px; transition: all 0.3s"
+            ></span>
+            <span
+                class="nav-bar bg-main-use block w-7 rounded-full"
+                style="height: 2px; transition: all 0.3s"
+            ></span>
         </button>
     </div>
 
     <!-- Mobile Menu -->
     <div
         id="mobile-menu"
-        class="lg:hidden bg-main-color3 border-t border-main-color2 px-6 pb-6"
-        style="display:none"
+        class="border-main-color2 absolute top-full right-6 mt-3 w-56 overflow-hidden rounded-2xl border bg-white shadow-[0_10px_30px_rgba(0,0,0,0.15)] lg:hidden"
+        style="display: none"
     >
-        <ul class="text-secondary-color1 flex flex-col gap-1 text-lg pt-4 items-center">
-            <li><a href="/Hair-Web/" class="block py-3 border-b border-main-color2" data-page="home">Home</a></li>
-            <li><a href="/Hair-Web/about/" class="block py-3 border-b border-main-color2" data-page="about">About Us</a></li>
-            <li><a href="/Hair-Web/services/" class="block py-3 border-b border-main-color2" data-page="services">Our Services</a></li>
-            <li><a href="/Hair-Web/contact/" class="block py-3 border-b border-main-color2" data-page="contact">Contact Us</a></li>
-            <li class="pt-4">
-                <a href="/Hair-Web/contact/" class="bg-main-use text-main-color3 rounded-[10px] px-6 py-3 block text-center">
-                    Book Consultation
-                </a>
+        <ul
+            class="text-secondary-color1 divide-main-color2 flex flex-col divide-y text-base"
+        >
+            <li>
+                <a
+                    href="/Hair-Web/"
+                    class="hover:bg-main-color3 block px-5 py-3"
+                    data-page="home"
+                    >Home</a
+                >
+            </li>
+            <li>
+                <a
+                    href="/Hair-Web/about/"
+                    class="hover:bg-main-color3 block px-5 py-3"
+                    data-page="about"
+                    >About Us</a
+                >
+            </li>
+            <li>
+                <a
+                    href="/Hair-Web/services/"
+                    class="hover:bg-main-color3 block px-5 py-3"
+                    data-page="services"
+                    >Our Services</a
+                >
+            </li>
+            <li>
+                <a
+                    href="/Hair-Web/contact/"
+                    class="hover:bg-main-color3 block px-5 py-3"
+                    data-page="contact"
+                    >Contact Us</a
+                >
             </li>
         </ul>
+        <a
+            href="/Hair-Web/contact/"
+            class="bg-main-use text-main-color3 block py-3 text-center font-semibold"
+        >
+            Book Consultation
+        </a>
     </div>
 </nav>

@@ -35,7 +35,11 @@ function initHamburger() {
 }
 
 function setActiveNavLink() {
-    const links = document.querySelectorAll("nav a[data-page]");
+    // Only apply the active-link highlight to the DESKTOP nav.
+    // Mobile menu links are left unstyled (no active state).
+    const links = document.querySelectorAll(
+        "nav ul:not(#mobile-menu ul) a[data-page]",
+    );
     const currentPage = getCurrentPageName();
     links.forEach((link) => {
         link.classList.remove("active");
@@ -47,7 +51,8 @@ function setActiveNavLink() {
 
 function getCurrentPageName() {
     const pathname = window.location.pathname;
-    if (pathname === "/Hair-Web/" || pathname === "/Hair-Web/index.html") return "home";
+    if (pathname === "/Hair-Web/" || pathname === "/Hair-Web/index.html")
+        return "home";
     if (pathname.includes("about")) return "about";
     if (pathname.includes("services")) return "services";
     if (pathname.includes("contact")) return "contact";

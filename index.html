@@ -9,138 +9,199 @@
         <script type="module" src="./src/footer.js"></script>
     </head>
     <body class="flex min-h-screen flex-col">
- 
         <!-- Hero -->
-        <div class="relative h-[480px] lg:h-180">
+        <div class="relative h-120 lg:h-180">
             <div
-                class="absolute z-10 flex h-full w-full flex-col pt-8 lg:pt-10 px-6 lg:px-0"
-                style="max-width: 1240px; left: 50%; transform: translateX(-50%);"
+                class="absolute z-10 flex h-full w-full flex-col px-6 pt-8 lg:px-0 lg:pt-10"
+                style="
+                    max-width: 1240px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                "
             >
-                <h1 class="text-main-color1 font-serif text-[38px] lg:text-[65px] leading-tight lg:leading-18 text-shadow-[0_5px_3px_rgba(0,0,0,0.2)]">
-                    Where<br /><span class="text-main-use">Confidence</span><br />Is Restored
+                <h1
+                    class="text-main-color1 font-serif text-[38px] leading-tight text-shadow-[0_5px_3px_rgba(0,0,0,0.2)] lg:text-[65px] lg:leading-18"
+                >
+                    Where<br /><span class="text-main-use">Confidence</span
+                    ><br />Is Restored
                 </h1>
-                <p class="text-main-color3 mt-4 lg:mt-8 text-[14px] lg:text-[16px] font-extrabold text-shadow-[0_5px_3px_rgba(0,0,0,0.2)]">
-                    Hair Restoration <span class="px-1 lg:px-2">·</span> Aesthetic Medicine <span class="px-1 lg:px-2">·</span> Regenerative Wellness
+                <p
+                    class="text-main-color3 mt-4 text-[14px] font-extrabold text-shadow-[0_5px_3px_rgba(0,0,0,0.2)] lg:mt-8 lg:text-[16px]"
+                >
+                    Hair Restoration
+                    <span class="px-1 lg:px-2">·</span> Aesthetic Medicine
+                    <span class="px-1 lg:px-2">·</span> Regenerative Wellness
                 </p>
-                <p class="text-main-color3 mt-3 lg:mt-5 text-[14px] lg:text-[16px] text-shadow-[0_5px_3px_rgba(0,0,0,0.2)]">
-                    Helping you look better, feel stronger, and age with confidence<br class="hidden lg:block" />
+                <p
+                    class="text-main-color3 mt-3 text-[14px] text-shadow-[0_5px_3px_rgba(0,0,0,0.2)] lg:mt-5 lg:text-[16px]"
+                >
+                    Helping you look better, feel stronger, and age with
+                    confidence<br class="hidden lg:block" />
                     through personalized, science-guided care.
                 </p>
-                <div class="mt-6 lg:mt-8 flex flex-col sm:flex-row gap-4 lg:gap-12">
+                <div
+                    class="mt-6 flex flex-col gap-4 sm:flex-row lg:mt-8 lg:gap-12"
+                >
                     <a
                         href="/Hair-Web/contact/"
-                        class="text-main-color1 bg-main-use rounded-[10px] px-5 py-3 lg:py-4 text-[18px] lg:text-[25px] font-extrabold text-center"
+                        class="text-main-color1 bg-main-use rounded-[10px] px-5 py-3 text-center text-[18px] font-extrabold lg:py-4 lg:text-[25px]"
                     >
                         Book Consultation
                     </a>
                     <a
                         href="/Hair-Web/services/"
-                        class="text-main-use bg-main-color3 border-main-use rounded-[10px] border p-3 lg:p-4 text-[18px] lg:text-[25px] font-extrabold text-center"
+                        class="text-main-use bg-main-color3 border-main-use rounded-[10px] border p-3 text-center text-[18px] font-extrabold lg:p-4 lg:text-[25px]"
                     >
                         Explore Treatments
                     </a>
                 </div>
- 
-                <!-- Feature Pills — hidden on mobile to keep hero clean -->
-                <div class="bg-main-color3 mt-8 lg:mt-10 hidden lg:flex justify-center gap-5 rounded-[10px] py-6">
-                    <span class="text-secondary-color1 flex justify-center gap-1 text-center text-[16px] font-light">
-                        <img src="/src/assets/icons/Out_Patient_Department.svg" class="mr-2 inline-block h-12.5 w-12.5" />
+
+                <!-- Feature Pills — original design, just becomes a 3x2 grid below xl (1280px) -->
+                <div
+                    class="bg-main-color3 mt-8 grid grid-cols-3 justify-center gap-3 rounded-[10px] py-6 xl:mt-10 xl:flex xl:gap-5"
+                >
+                    <span
+                        class="text-secondary-color1 flex flex-col items-center justify-center gap-1 text-center text-[12px] font-light xl:flex-row xl:text-[16px]"
+                    >
+                        <img
+                            src="/src/assets/icons/Out_Patient_Department.svg"
+                            class="inline-block h-9 w-9 xl:mr-2 xl:h-12.5 xl:w-12.5"
+                        />
                         Doctor-led<br />Consultations
                     </span>
-                    <span class="text-secondary-color1 flex justify-center gap-1 text-center text-[16px] font-light">
-                        <img src="/src/assets/icons/Registration.svg" class="mr-2 inline-block h-12.5 w-12.5" />
+                    <span
+                        class="text-secondary-color1 flex flex-col items-center justify-center gap-1 text-center text-[12px] font-light xl:flex-row xl:text-[16px]"
+                    >
+                        <img
+                            src="/src/assets/icons/Registration.svg"
+                            class="inline-block h-9 w-9 xl:mr-2 xl:h-12.5 xl:w-12.5"
+                        />
                         Personalized<br />Treatment Plans
                     </span>
-                    <span class="text-secondary-color1 flex justify-center gap-1 text-center text-[16px] font-light">
-                        <img src="/src/assets/icons/Attendance.svg" class="mr-2 inline-block h-12.5 w-12.5" />
+                    <span
+                        class="text-secondary-color1 flex flex-col items-center justify-center gap-1 text-center text-[12px] font-light xl:flex-row xl:text-[16px]"
+                    >
+                        <img
+                            src="/src/assets/icons/Attendance.svg"
+                            class="inline-block h-9 w-9 xl:mr-2 xl:h-12.5 xl:w-12.5"
+                        />
                         Evidence-based<br />Therapies
                     </span>
-                    <span class="text-secondary-color1 flex justify-center gap-1 text-center text-[16px] font-light">
-                        <img src="/src/assets/icons/Sustainability.svg" class="mr-2 inline-block h-12.5 w-12.5" />
+                    <span
+                        class="text-secondary-color1 flex flex-col items-center justify-center gap-1 text-center text-[12px] font-light xl:flex-row xl:text-[16px]"
+                    >
+                        <img
+                            src="/src/assets/icons/Sustainability.svg"
+                            class="inline-block h-9 w-9 xl:mr-2 xl:h-12.5 xl:w-12.5"
+                        />
                         Natural-looking<br />Results
                     </span>
-                    <span class="text-secondary-color1 flex justify-center gap-1 text-center text-[16px] font-light">
-                        <img src="/src/assets/icons/Trust.svg" class="mr-2 inline-block h-12.5 w-12.5" />
+                    <span
+                        class="text-secondary-color1 flex flex-col items-center justify-center gap-1 text-center text-[12px] font-light xl:flex-row xl:text-[16px]"
+                    >
+                        <img
+                            src="/src/assets/icons/Trust.svg"
+                            class="inline-block h-9 w-9 xl:mr-2 xl:h-12.5 xl:w-12.5"
+                        />
                         Long-term<br />Wellbeing
                     </span>
-                    <span class="text-secondary-color1 flex justify-center gap-1 text-center text-[16px] font-light">
-                        <img src="/src/assets/icons/honesty.svg" class="mr-2 inline-block h-12.5 w-12.5" />
+                    <span
+                        class="text-secondary-color1 flex flex-col items-center justify-center gap-1 text-center text-[12px] font-light xl:flex-row xl:text-[16px]"
+                    >
+                        <img
+                            src="/src/assets/icons/honesty.svg"
+                            class="inline-block h-9 w-9 xl:mr-2 xl:h-12.5 xl:w-12.5"
+                        />
                         Discreet &<br />Comfortable
                     </span>
                 </div>
- 
-                <div class="mt-5 hidden lg:flex items-center justify-center gap-4">
+
+                <div
+                    class="mt-4 hidden items-center justify-center gap-4 xl:flex"
+                >
                     <div class="bg-main-color2 h-2.5 w-2.5 rounded-full"></div>
                     <div class="bg-main-color3 h-3 w-3 rounded-full"></div>
                     <div class="bg-main-color2 h-2.5 w-2.5 rounded-full"></div>
                 </div>
             </div>
- 
-            <img src="/src/assets/images/hero.png" class="absolute top-0 left-0 h-full w-full object-cover" />
-            <div class="absolute inset-0 bg-linear-to-r from-[#323232]/60 to-[#ffffff]/0"></div>
-            <span class="bg-main-use text-main-color1 absolute bottom-0 flex h-10 lg:h-12.5 w-full items-center justify-center text-[13px] lg:text-[16px] font-light px-4 text-center">
-                "True transformation is not only seen in the mirror — it is felt in everyday life."
+
+            <img
+                src="/src/assets/images/hero.png"
+                class="absolute top-0 left-0 h-full w-full object-cover"
+            />
+            <div
+                class="absolute inset-0 bg-linear-to-r from-[#323232]/60 to-[#ffffff]/0"
+            ></div>
+
+            <span
+                class="bg-main-use text-main-color1 absolute bottom-0 z-10 flex h-10 w-full items-center justify-center px-4 text-center text-[12px] font-light xl:h-12.5 xl:text-[16px]"
+            >
+                "True transformation is not only seen in the mirror — it is felt
+                in everyday life."
             </span>
         </div>
- 
-        <!-- Mobile feature grid -->
-        <div class="lg:hidden bg-main-color3 px-6 py-6 grid grid-cols-2 gap-4">
-            <span class="text-secondary-color1 flex items-center gap-2 text-[13px] font-light">
-                <img src="/src/assets/icons/Out_Patient_Department.svg" class="h-8 w-8 shrink-0" />
-                Doctor-led Consultations
-            </span>
-            <span class="text-secondary-color1 flex items-center gap-2 text-[13px] font-light">
-                <img src="/src/assets/icons/Registration.svg" class="h-8 w-8 shrink-0" />
-                Personalized Treatment Plans
-            </span>
-            <span class="text-secondary-color1 flex items-center gap-2 text-[13px] font-light">
-                <img src="/src/assets/icons/Attendance.svg" class="h-8 w-8 shrink-0" />
-                Evidence-based Therapies
-            </span>
-            <span class="text-secondary-color1 flex items-center gap-2 text-[13px] font-light">
-                <img src="/src/assets/icons/Sustainability.svg" class="h-8 w-8 shrink-0" />
-                Natural-looking Results
-            </span>
-            <span class="text-secondary-color1 flex items-center gap-2 text-[13px] font-light">
-                <img src="/src/assets/icons/Trust.svg" class="h-8 w-8 shrink-0" />
-                Long-term Wellbeing
-            </span>
-            <span class="text-secondary-color1 flex items-center gap-2 text-[13px] font-light">
-                <img src="/src/assets/icons/honesty.svg" class="h-8 w-8 shrink-0" />
-                Discreet & Comfortable
-            </span>
-        </div>
- 
+
         <!-- Core Services -->
         <div class="mx-auto w-full px-6 lg:px-0" style="max-width: 1240px">
-            <h2 class="text-main-use mt-10 lg:mt-15 text-center font-serif text-[28px] lg:text-[35px]">
+            <h2
+                class="text-main-use mt-10 text-center font-serif text-[28px] lg:mt-15 lg:text-[35px]"
+            >
                 Our Core Service
             </h2>
-            <div class="mt-6 lg:mt-8 flex flex-col lg:flex-row items-stretch gap-5">
-                <div class="flex h-auto lg:h-50 w-full lg:w-100 overflow-hidden rounded-2xl bg-[#F9F6F2] shadow-2xl">
-                    <img src="/src/assets/images/service1.png" class="w-28 lg:w-auto shrink-0 object-cover" />
+            <div
+                class="mt-6 flex flex-col items-stretch gap-5 lg:mt-8 lg:flex-row"
+            >
+                <div
+                    class="flex h-auto w-full overflow-hidden rounded-2xl bg-[#F9F6F2] shadow-2xl lg:h-50 lg:w-100"
+                >
+                    <img
+                        src="/src/assets/images/service1.png"
+                        class="w-28 shrink-0 object-cover lg:w-auto"
+                    />
                     <div class="text-secondary-color1 p-4 lg:p-5">
-                        <h3 class="text-[15px] lg:text-[16px] font-semibold">Hair Restoration</h3>
+                        <h3 class="text-[15px] font-semibold lg:text-[16px]">
+                            Hair Restoration
+                        </h3>
                         <p class="mt-2 text-[12px] font-light">
-                            Comprehensive hair restoration solutions that restore natural-looking hair growth through medical therapy, regenerative treatments, and advanced transplantation techniques.
+                            Comprehensive hair restoration solutions that
+                            restore natural-looking hair growth through medical
+                            therapy, regenerative treatments, and advanced
+                            transplantation techniques.
                         </p>
                     </div>
                 </div>
-                <div class="flex h-auto lg:h-50 w-full lg:w-100 overflow-hidden rounded-2xl bg-[#F9F6F2] shadow-2xl">
-                    <img src="/src/assets/images/service2.png" class="w-28 lg:w-auto shrink-0 object-cover" />
+                <div
+                    class="flex h-auto w-full overflow-hidden rounded-2xl bg-[#F9F6F2] shadow-2xl lg:h-50 lg:w-100"
+                >
+                    <img
+                        src="/src/assets/images/service2.png"
+                        class="w-28 shrink-0 object-cover lg:w-auto"
+                    />
                     <div class="text-secondary-color1 p-4 lg:p-5">
-                        <h3 class="text-[15px] lg:text-[16px] font-semibold">Aesthetic Medicine</h3>
+                        <h3 class="text-[15px] font-semibold lg:text-[16px]">
+                            Aesthetic Medicine
+                        </h3>
                         <p class="mt-2 text-[12px] font-light">
-                            Personalized aesthetic treatments that enhance natural beauty, improve skin quality, and support long-lasting skin rejuvenation.
+                            Personalized aesthetic treatments that enhance
+                            natural beauty, improve skin quality, and support
+                            long-lasting skin rejuvenation.
                         </p>
                     </div>
                 </div>
-                <div class="flex h-auto lg:h-50 w-full lg:w-100 overflow-hidden rounded-2xl bg-[#F9F6F2] shadow-2xl">
-                    <img src="/src/assets/images/service3.png" class="w-28 lg:w-auto shrink-0 object-cover" />
+                <div
+                    class="flex h-auto w-full overflow-hidden rounded-2xl bg-[#F9F6F2] shadow-2xl lg:h-50 lg:w-100"
+                >
+                    <img
+                        src="/src/assets/images/service3.png"
+                        class="w-28 shrink-0 object-cover lg:w-auto"
+                    />
                     <div class="text-secondary-color1 p-4 lg:p-5">
-                        <h3 class="text-[15px] lg:text-[16px] font-semibold">Regenerative Wellness</h3>
+                        <h3 class="text-[15px] font-semibold lg:text-[16px]">
+                            Regenerative Wellness
+                        </h3>
                         <p class="mt-2 text-[12px] font-light">
-                            Science-guided therapies designed to support vitality, recovery, and overall wellbeing.
+                            Science-guided therapies designed to support
+                            vitality, recovery, and overall wellbeing.
                         </p>
                     </div>
                 </div>
