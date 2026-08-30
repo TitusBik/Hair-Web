@@ -9,163 +9,63 @@
         <script type="module" src="../src/footer.js"></script>
     </head>
     <body class="flex min-h-screen flex-col">
-        <img src="/src/assets/images/promo.png" alt="Promotion" class="" />
-        <h1
-            class="text-main-color1 bg-main-use py-4 text-center font-serif text-[28px] lg:py-6 lg:text-[35px]"
-        >
-            Luma Clinic Pre-opening Exclusive
-        </h1>
+        <div class="relative font-serif">
+            <img src="/src/assets/images/promo.png" alt="Promotion" class="inset-0 h-full w-full object-cover" />
+            <div class="absolute top-11 w-full  flex flex-col items-center justify-center text-center text-main-use ">
+                <h1 class="text-8xl  ">LUMA</h1>
+                <h2 class="text-5xl  text-[#854E15]">REGENERATIVE THERAPY</h2>
 
-        <div
-            class="mx-auto w-full px-6 pt-6 lg:px-0 lg:pt-0"
-            style="max-width: 1240px"
-        >
-            <h3
-                class="text-main-use pt-5 text-center text-[18px] font-bold lg:text-[20px]"
-            >
-                PRE-OPENING PRICE: RM499 ONLY
-            </h3>
-            <h3 class="text-main-use text-center text-[16px] lg:text-[20px]">
-                (Usual Value: RM1,800)
-            </h3>
+                <div class="flex text-start gap-8 font-semibold border-2 border-[#E2C9B5] rounded-3xl px-8 pt-2 mt-3 bg-[#F4EFEC]/70">
+                    <img src="/src/assets/icons/price_tag.svg" alt="" class="w-20" />
+                    <p class="text-2xl">
+                        FIRST TRIAL AT
+                        <br />
+                        <span class="text-5xl">RM499</span> 
+                        <span class="text-[#854E15] pl-3">ONLY</span>
+                        <br />
+                        <span class="font-poppins text-lg font-medium">(Normal Price RM1,800)</span>
+                    </p>
+                </div>
 
-            <!-- Image carousel area -->
-            <div
-                class="relative mx-auto mt-6 flex max-w-[90vw] items-center justify-center lg:max-w-170"
-            >
-                <button
-                    class="absolute top-1/2 -left-8 flex -translate-y-1/2 lg:-left-40"
-                >
-                    <img
-                        src="/src/assets/icons/Arrow.svg"
-                        alt="Previous"
-                        class="h-10 w-10 rotate-180 lg:h-16 lg:w-16"
-                    />
-                </button>
-                <img
-                    src="/src/assets/images/promo1.png"
-                    alt="Promotion 1"
-                    class="h-[220px] w-full rounded-[20px] object-cover lg:h-100"
-                />
-                <button
-                    class="absolute top-1/2 -right-8 flex -translate-y-1/2 lg:-right-40"
-                >
-                    <img
-                        src="/src/assets/icons/Arrow.svg"
-                        alt="Next"
-                        class="h-10 w-10 lg:h-16 lg:w-16"
-                    />
-                </button>
+                <div class="my-3 flex items-center justify-center gap-3">
+                    <span class="h-0.5 w-10 bg-[#E2C9B5] "></span>
+                    <span class="text-center font-bold uppercase">CHOOSE ONE OF OUR SIGNATURE REGENERATIVE THERAPIES</span>
+                    <span class="h-0.5 w-10 bg-[#E2C9B5] "></span>
+                </div>
+
+                <div class="text-main-use font-semibold flex flex-row gap-6 justify-center items-center">
+                    <div class="border border-transparent shadow bg-white inline-flex flex-col rounded-xl pt-0.5 px-1.5 w-85.25 relative">
+                        <img src="/src/assets/icons/hair therapy.svg" alt="" class="absolute -top-4 left-1.5 border-2 border-white rounded-full" />
+                        <img src="/src/assets/images/hair therapy.png" alt="" class="rounded-xl" />
+                        <span>LUMA REGENERATIVE</span>
+                        <span class="text-2xl tracking-wider">HAIR THERAPY</span>
+                        <span class="h-0.5 w-70 bg-[#E2C9B5] self-center"></span>
+                        <p class="font-poppins text-sm mt-1 w-70 self-center">Designed to support scalp health and hair vitality through advanced regenerative treatments.</p>
+                    </div>
+
+                   <div class="border border-transparent shadow bg-white inline-flex flex-col rounded-xl pt-0.5 px-1.5 w-85.25 relative">
+                        <img src="/src/assets/icons/skin therapy.svg" alt="" class="absolute -top-4 left-1.5 border-2 border-white rounded-full" />
+                        <img src="/src/assets/images/skin therapy.png" alt="" class="rounded-xl" />
+                        <span>LUMA REGENERATIVE</span>
+                        <span class="text-2xl tracking-wider">SKIN THERAPY</span>
+                        <span class="h-0.5 w-70 bg-[#E2C9B5] self-center"></span>
+                        <p class="font-poppins text-sm mt-1 w-70 self-center">A rejuvenating treatment to improve skin quality, hydration, radiance, and overall skin health.</p>
+                    </div>
+
+                   <div class="border border-transparent shadow bg-white inline-flex flex-col rounded-xl pt-0.5 px-1.5 w-85.25 relative">
+                        <img src="/src/assets/icons/wellness therapy.svg" alt="" class="absolute -top-4 left-1.5 border-2 border-white rounded-full" />
+                        <img src="/src/assets/images/wellness therapy.png" alt="" class="rounded-xl" />
+                        <span>LUMA REGENERATIVE</span>
+                        <span class="text-2xl tracking-wider">WELLNESS THERAPY</span>
+                        <span class="h-0.5 w-70 bg-[#E2C9B5] self-center"></span>
+                        <p class="font-poppins text-sm mt-1 w-70 self-center">A restorative wellness infusion designed to support energy, recovery, hydration, and overall well-being.</p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <!-- Details section -->
-        <div
-            class="bg-main-use text-main-color1 mt-6 pt-12 pb-12 lg:-mt-18 lg:pt-20 lg:pb-20"
-        >
-            <div
-                class="text-main-color1 mx-auto px-6 lg:px-0"
-                style="max-width: 1240px"
-            >
-                <h2 class="text-center font-serif text-[24px] lg:text-[35px]">
-                    LUMA Regenerative Hair Therapy
-                </h2>
-
-                <div class="mt-6 lg:max-w-225">
-                    <h3 class="text-[18px] font-bold lg:text-[25px]">
-                        Your experience includes:
-                    </h3>
-                    <ul class="mt-3 space-y-3 text-[14px] lg:text-[16px]">
-                        <li class="flex items-center gap-3">
-                            <div
-                                class="flex h-6 w-6 shrink-0 items-center justify-center"
-                            >
-                                <img
-                                    src="/src/assets/icons/Tick Box.svg"
-                                    alt="Tick"
-                                    class="h-full w-full object-contain"
-                                />
-                            </div>
-                            <span>Personalized Medical Consultation</span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <div
-                                class="flex h-6 w-6 shrink-0 items-center justify-center"
-                            >
-                                <img
-                                    src="/src/assets/icons/Tick Box.svg"
-                                    alt="Tick"
-                                    class="h-full w-full object-contain"
-                                />
-                            </div>
-                            <span>Procedure Performed by a Doctor</span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <div
-                                class="flex h-6 w-6 shrink-0 items-center justify-center"
-                            >
-                                <img
-                                    src="/src/assets/icons/Tick Box.svg"
-                                    alt="Tick"
-                                    class="h-full w-full object-contain"
-                                />
-                            </div>
-                            <span>Individualized Treatment Planning</span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <div
-                                class="flex h-6 w-6 shrink-0 items-center justify-center"
-                            >
-                                <img
-                                    src="/src/assets/icons/Tick Box.svg"
-                                    alt="Tick"
-                                    class="h-full w-full object-contain"
-                                />
-                            </div>
-                            <span>Professional Clinical Environment</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <p class="mt-5 text-[14px] leading-7 lg:text-[16px]">
-                    At LUMA Clinic, we believe confidence starts from within.
-                    Whether you're looking to support your hair, skin, or
-                    overall wellness, our regenerative therapies are designed to
-                    help you look and feel your best through a personalized
-                    approach to care.
-                </p>
-
-                <h3 class="mt-6 text-[18px] font-bold lg:text-[25px]">
-                    Promotion Terms
-                </h3>
-                <ul class="mt-3 space-y-1 text-[13px] leading-7 lg:text-[15px]">
-                    <li>* Maximum one purchase per therapy per person</li>
-                    <li>
-                        * Each individual may purchase up to three therapies in
-                        total (one Hair Therapy, one Wellness Therapy, and one
-                        Skin Therapy)
-                    </li>
-                    <li>* Subject to appointment availability</li>
-                    <li>* Limited promotional slots available</li>
-                </ul>
-
-                <div
-                    class="mt-10 flex flex-col justify-center gap-5 sm:flex-row lg:mt-14 lg:gap-28"
-                >
-                    <a
-                        href="/Hair-Web/contact/"
-                        class="bg-secondary-color2 w-full rounded-lg py-3 text-center text-[16px] text-white hover:opacity-90 sm:w-62.5 lg:text-[20px]"
-                    >
-                        Book Consultation
-                    </a>
-                    <a
-                        href="/Hair-Web/"
-                        class="w-full rounded-lg bg-[#222] py-3 text-center text-[16px] text-white hover:opacity-90 sm:w-62.5 lg:text-[20px]"
-                    >
-                        Back To Home
-                    </a>
-                </div>
-            </div>
+        <div>
+            <!-- Continue-->
         </div>
     </body>
 </html>
