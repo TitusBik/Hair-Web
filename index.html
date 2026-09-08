@@ -66,7 +66,7 @@
                             src="/src/assets/icons/Out_Patient_Department.svg"
                             class="inline-block h-9 w-9 xl:mr-2 xl:h-12.5 xl:w-12.5"
                         />
-                        Doctor-led<br />Consultations
+                        Personalized<br />Medical Consultations
                     </span>
                     <span
                         class="text-secondary-color1 flex flex-col items-center justify-center gap-1 text-center text-[12px] font-light xl:flex-row xl:text-[16px]"
@@ -81,10 +81,10 @@
                         class="text-secondary-color1 flex flex-col items-center justify-center gap-1 text-center text-[12px] font-light xl:flex-row xl:text-[16px]"
                     >
                         <img
-                            src="/src/assets/icons/Attendance.svg"
+                            src="/src/assets/icons/honesty.svg"
                             class="inline-block h-9 w-9 xl:mr-2 xl:h-12.5 xl:w-12.5"
                         />
-                        Evidence-based<br />Therapies
+                        Discreet &<br />Comfortable
                     </span>
                     <span
                         class="text-secondary-color1 flex flex-col items-center justify-center gap-1 text-center text-[12px] font-light xl:flex-row xl:text-[16px]"
@@ -102,16 +102,16 @@
                             src="/src/assets/icons/Trust.svg"
                             class="inline-block h-9 w-9 xl:mr-2 xl:h-12.5 xl:w-12.5"
                         />
-                        Long-term<br />Wellbeing
+                        Doctor Performed<br />Procedure
                     </span>
                     <span
                         class="text-secondary-color1 flex flex-col items-center justify-center gap-1 text-center text-[12px] font-light xl:flex-row xl:text-[16px]"
                     >
                         <img
-                            src="/src/assets/icons/honesty.svg"
+                            src="/src/assets/icons/Attendance.svg"
                             class="inline-block h-9 w-9 xl:mr-2 xl:h-12.5 xl:w-12.5"
                         />
-                        Discreet &<br />Comfortable
+                        Evidence-based<br />Therapies
                     </span>
                 </div>
 
@@ -151,7 +151,7 @@
                 class="mt-6 flex flex-col items-stretch gap-5 xl:mt-8 xl:flex-row"
             >
                 <div
-                    class="flex h-44 w-full overflow-hidden rounded-2xl bg-[#F9F6F2] shadow-2xl xl:h-50"
+                    class="flex h-44 w-full overflow-hidden rounded-2xl bg-[#F9F6F2] shadow-2xl xl:h-55"
                 >
                     <img
                         src="/src/assets/images/service1.png"
@@ -170,7 +170,7 @@
                     </div>
                 </div>
                 <div
-                    class="flex h-44 w-full overflow-hidden rounded-2xl bg-[#F9F6F2] shadow-2xl xl:h-50"
+                    class="flex h-44 w-full overflow-hidden rounded-2xl bg-[#F9F6F2] shadow-2xl xl:h-55"
                 >
                     <img
                         src="/src/assets/images/service2.png"
@@ -188,11 +188,11 @@
                     </div>
                 </div>
                 <div
-                    class="flex h-44 w-full overflow-hidden rounded-2xl bg-[#F9F6F2] shadow-2xl xl:h-50"
+                    class="flex h-44 w-full overflow-hidden rounded-2xl bg-[#F9F6F2] shadow-2xl xl:h-55"
                 >
                     <img
                         src="/src/assets/images/service3.png"
-                        class="h-full w-28 shrink-0 object-cover xl:w-50"
+                        class="h-full w-28 shrink-0 object-cover object-[50%_25%] xl:w-50"
                     />
                     <div class="text-secondary-color1 p-4 xl:p-5">
                         <h3 class="text-[15px] font-semibold xl:text-[16px]">
@@ -208,7 +208,7 @@
 
             <!-- Promo: only highlighted card shown, others hidden (slider-ready) -->
             <h2
-                class="text-main-use mt-12 text-center font-serif text-[26px] xl:mt-18 xl:text-[35px]"
+                class="text-main-use mt-12 text-center font-serif text-[26px] xl:mt-10 xl:text-[35px]"
             >
                 Luma Clinic Pre-opening Exclusive
             </h2>
@@ -216,7 +216,7 @@
             <!-- Promo slider wrapper -->
             <div
                 id="promo-slider"
-                class="mt-6 xl:mt-8 xl:flex xl:items-start xl:justify-between xl:gap-5"
+                class="mt-6 touch-pan-y xl:mt-8 xl:flex xl:items-start xl:justify-between xl:gap-5"
             >
                 <!-- Card 1: Hair Therapy (always visible on desktop, slide 0 on mobile) -->
                 <a
@@ -339,8 +339,12 @@
                     const INTERVAL = 5000;
                     const slides = document.querySelectorAll(".promo-slide");
                     const dots = document.querySelectorAll(".promo-dot");
+                    const slider = document.getElementById("promo-slider");
                     let current = 0;
                     let timer = null;
+                    let startX = 0;
+                    let isDragging = false;
+                    let suppressClick = false;
 
                     function isDesktop() {
                         return window.innerWidth >= 1280;
@@ -369,16 +373,60 @@
                         timer = setInterval(next, INTERVAL);
                     }
 
+                    function stopTimer() {
+                        clearInterval(timer);
+                        timer = null;
+                    }
+
                     function onResize() {
                         if (isDesktop()) {
                             // Show all on desktop
-                            clearInterval(timer);
+                            stopTimer();
                             slides.forEach((s) => (s.style.display = ""));
                         } else {
                             showSlide(current);
                             startTimer();
                         }
                     }
+
+                    slider.addEventListener("pointerdown", (event) => {
+                        if (isDesktop()) return;
+                        startX = event.clientX;
+                        isDragging = true;
+                        suppressClick = false;
+                        stopTimer();
+                        slider.setPointerCapture(event.pointerId);
+                    });
+
+                    slider.addEventListener("pointerup", (event) => {
+                        if (!isDragging) return;
+                        const distance = event.clientX - startX;
+                        isDragging = false;
+
+                        if (Math.abs(distance) >= 50) {
+                            showSlide(
+                                (current + (distance < 0 ? 1 : slides.length - 1)) %
+                                    slides.length,
+                            );
+                            suppressClick = true;
+                        }
+
+                        // Keep the selected card visible for five seconds after a swipe.
+                        startTimer();
+                    });
+
+                    slider.addEventListener("pointercancel", () => {
+                        if (!isDragging) return;
+                        isDragging = false;
+                        startTimer();
+                    });
+
+                    slider.addEventListener("click", (event) => {
+                        if (!suppressClick) return;
+                        event.preventDefault();
+                        event.stopPropagation();
+                        suppressClick = false;
+                    });
 
                     // Dot click
                     dots.forEach((dot, i) => {
