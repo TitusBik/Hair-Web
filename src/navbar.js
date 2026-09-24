@@ -1,5 +1,5 @@
 function loadNavbar() {
-    fetch("/Hair-Web/components/navbar.html")
+    fetch("/components/navbar.html")
         .then((response) => response.text())
         .then((data) => {
             if (!document.querySelector("nav")) {
@@ -51,8 +51,7 @@ function setActiveNavLink() {
 
 function getCurrentPageName() {
     const pathname = window.location.pathname;
-    if (pathname === "/Hair-Web/" || pathname === "/Hair-Web/index.html")
-        return "home";
+    if (pathname === "/" || pathname === "/index.html") return "home";
     if (pathname.includes("about")) return "about";
     if (pathname.includes("services")) return "services";
     if (pathname.includes("contact")) return "contact";

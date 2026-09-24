@@ -1,5 +1,5 @@
 function loadFooter() {
-    fetch("/Hair-Web/components/footer.html")
+    fetch("/components/footer.html")
         .then((response) => response.text())
         .then((data) => {
             if (!document.querySelector("footer")) {
