@@ -1,30 +1,39 @@
-<footer class="bg-main-use mt-auto h-42.5">
+<footer class="bg-main-use mt-auto py-8 md:h-42.5 md:py-0">
     <div
-        class="mx-auto flex items-center justify-between"
+        class="mx-auto flex flex-col items-center gap-6 px-6 md:h-full md:flex-row md:items-center md:justify-between"
         style="max-width: 1240px"
     >
-        <img src="/src/assets/images/logo footer.png" />
-        <div class="flex flex-col gap-4">
-            <div class="flex justify-between">
+        <img
+            src="/assets/images/logo footer.png"
+            alt="LUMA Clinic"
+            class="w-44 md:w-52"
+        />
+        <div class="flex flex-col items-center gap-4">
+            <div class="flex gap-2.5">
                 <img
-                    src="/src/assets/icons/Facebook.svg"
-                    class="inline-block h-12.5 w-12.5 cursor-pointer"
+                    src="/assets/icons/Facebook.svg"
+                    alt="Facebook"
+                    class="h-8 w-8 cursor-pointer md:h-10 md:w-10"
                 />
                 <img
-                    src="/src/assets/icons/Instagram Circle.svg"
-                    class="inline-block h-12.5 w-12.5 cursor-pointer"
+                    src="/assets/icons/Instagram Circle.svg"
+                    alt="Instagram"
+                    class="h-8 w-8 cursor-pointer md:h-10 md:w-10"
                 />
                 <img
-                    src="/src/assets/icons/WhatsApp.svg"
-                    class="inline-block h-12.5 w-12.5 cursor-pointer"
+                    src="/assets/icons/Whatsapp.svg"
+                    alt="WhatsApp"
+                    class="h-8 w-8 cursor-pointer md:h-10 md:w-10"
                 />
             </div>
-            <span class="text-[16px ] text-main-color1 font-light"
+            <span class="text-main-color1 text-center text-sm font-light md:text-left"
                 >© 2026 LUMA Clinic. All rights reserved.</span
             >
         </div>
-        <div class="flex flex-col items-center gap-5">
-            <ul class="text-main-color1 flex items-center gap-8 text-xl">
+        <div class="flex flex-col items-center gap-4">
+            <ul
+                class="text-main-color1 flex flex-wrap justify-center gap-x-5 gap-y-2 text-base md:text-xl"
+            >
                 <li><a href="/index.html">Home</a></li>
                 <li>
                     <a href="/about/index.html">About Us</a>
@@ -36,14 +45,12 @@
                     <a href="/contact/index.html">Contact Us</a>
                 </li>
             </ul>
-            <li>
-                <a
-                    href="/contact/index.html"
-                    class="bg-secondary-color2 text-main-color1 w-fit rounded-[10px] px-9 py-2.5 text-xl"
-                >
-                    Book Consultation
-                </a>
-            </li>
+            <a
+                href="/contact/index.html"
+                class="bg-secondary-color2 text-main-color1 w-fit rounded-[10px] px-6 py-2 text-base md:px-9 md:py-2.5 md:text-xl"
+            >
+                Book Consultation
+            </a>
         </div>
     </div>
 </footer>

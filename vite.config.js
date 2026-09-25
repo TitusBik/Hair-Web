@@ -12,6 +12,13 @@ export default defineConfig({
                 contact: "/contact/index.html",
                 promotion: "/promotion/index.html",
                 services: "/services/index.html",
+                navbar: "src/navbar.js",
+            },
+            output: {
+                entryFileNames: (chunkInfo) =>
+                    chunkInfo.name === "navbar"
+                        ? "navbar.js"
+                        : "assets/[name]-[hash].js",
             },
         },
     },

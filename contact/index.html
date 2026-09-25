@@ -7,6 +7,7 @@
         <title>Contact Us — LUMA Clinic</title>
         <script type="module" src="/src/navbar.js"></script>
         <script type="module" src="/src/footer.js"></script>
+        <script type="module" src="/src/contact-form.js"></script>
     </head>
     <body class="flex min-h-screen flex-col">
         <div>
@@ -68,31 +69,42 @@
                             Schedule a consultation with our medical team to
                             find the right treatment for your needs.
                         </p>
-                        <form class="space-y-4 pt-8 lg:pt-10">
+                        <form
+                            id="consultation-form"
+                            class="space-y-4 pt-8 lg:pt-10"
+                        >
                             <input
                                 id="full-name"
+                                name="fullName"
                                 type="text"
+                                required
                                 class="border-secondary-color2 text-secondary-color1 placeholder:text-secondary-color2 w-full border-0 border-b bg-transparent pb-3 font-light outline-none"
                                 placeholder="Full Name *"
                             />
                             <input
                                 id="email"
+                                name="email"
                                 type="email"
+                                required
                                 class="border-secondary-color2 text-secondary-color1 placeholder:text-secondary-color2 w-full border-0 border-b bg-transparent pb-3 font-light outline-none"
                                 placeholder="Email Address *"
                             />
                             <input
                                 id="treatment"
+                                name="treatment"
                                 type="text"
+                                required
                                 class="border-secondary-color2 text-secondary-color1 placeholder:text-secondary-color2 w-full border-0 border-b bg-transparent pb-3 font-light outline-none"
                                 placeholder="Treatment Of Interest *"
                             />
-                            <input
+                            <textarea
                                 id="message"
-                                type="text"
+                                name="message"
+                                required
+                                rows="3"
                                 class="border-secondary-color2 text-secondary-color1 placeholder:text-secondary-color2 w-full border-0 border-b bg-transparent pb-3 font-light outline-none"
-                                placeholder="Message"
-                            />
+                                placeholder="Message *"
+                            ></textarea>
                             <button
                                 type="submit"
                                 class="bg-main-use mt-8 flex h-16 w-full cursor-pointer items-center justify-center gap-4 rounded-[25px] px-6 text-[18px] font-bold text-white lg:mt-10 lg:h-19.5 lg:text-[25px]"
@@ -103,6 +115,12 @@
                                     alt="Arrow Right"
                                 />
                             </button>
+                            <p
+                                id="consultation-form-status"
+                                class="text-secondary-color1 text-center text-sm"
+                                role="status"
+                                aria-live="polite"
+                            ></p>
                         </form>
                     </div>
 

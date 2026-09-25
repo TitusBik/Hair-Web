@@ -21,6 +21,7 @@ function initHamburger() {
     toggle.addEventListener("click", () => {
         const isOpen = menu.style.display === "block";
         menu.style.display = isOpen ? "none" : "block";
+        toggle.setAttribute("aria-expanded", String(!isOpen));
 
         if (!isOpen) {
             bars[0].style.transform = "translateY(8px) rotate(45deg)";
